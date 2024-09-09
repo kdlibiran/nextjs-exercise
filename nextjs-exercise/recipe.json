@@ -1,0 +1,436 @@
+{
+   "1" : {
+    "id": 1,
+    "name": "Pancakes",
+    "image": "/images/pancakes.jpg",
+    "ingredients": [
+        "1 cup of flour",
+        "2 eggs",
+        "1 cup of milk",
+        "1 tablespoon of sugar",
+        "1 teaspoon of baking powder",
+        "1 teaspoon of baking soda",
+        "1 teaspoon of salt"
+    ],
+    "instructions": [
+        "Mix the flour, eggs, milk, sugar, baking powder, baking soda, and salt in a bowl.",
+        "Pour the batter onto a hot frying pan.",
+        "Cook until bubbles form on the surface.",
+        "Flip and cook the other side."
+    ]
+    }
+,
+    "2": {
+        "id": 2,
+        "name": "Scrambled Eggs",
+        "image": "/images/scrambled_eggs.jpg",
+        "ingredients": [
+            "4 eggs",
+            "1/4 cup milk",
+            "Salt to taste",
+            "Pepper to taste",
+            "1 tablespoon butter"
+        ],
+        "instructions": [
+            "Whisk eggs, milk, salt, and pepper in a bowl.",
+            "Melt butter in a non-stick pan over medium heat.",
+            "Pour in the egg mixture and cook, stirring gently.",
+            "Continue cooking until eggs are set but still moist.",
+            "Remove from heat and serve immediately."
+        ]
+    },
+    "3": {
+        "id": 3,
+        "name": "Grilled Cheese Sandwich",
+        "image": "/images/grilled_cheese.jpg",
+        "ingredients": [
+            "2 slices of bread",
+            "2 slices of cheese",
+            "2 tablespoons butter"
+        ],
+        "instructions": [
+            "Butter one side of each slice of bread.",
+            "Place cheese between the unbuttered sides of the bread.",
+            "Heat a skillet over medium heat.",
+            "Place the sandwich in the skillet, buttered side down.",
+            "Cook until golden brown, then flip and cook the other side.",
+            "Remove from heat when both sides are golden and cheese is melted."
+        ]
+    },
+    "4": {
+        "id": 4,
+        "name": "Fruit Smoothie",
+        "image": "/images/fruit_smoothie.jpg",
+        "ingredients": [
+            "1 banana",
+            "1 cup mixed berries",
+            "1 cup yogurt",
+            "1/2 cup milk",
+            "1 tablespoon honey",
+            "Ice cubes"
+        ],
+        "instructions": [
+            "Add all ingredients to a blender.",
+            "Blend until smooth.",
+            "Pour into glasses and serve immediately."
+        ]
+    },
+    "5": {
+        "id": 5,
+        "name": "Spaghetti Bolognese",
+        "image": "/images/spaghetti_bolognese.jpg",
+        "ingredients": [
+            "200g spaghetti",
+            "100g ground beef",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "400g canned tomatoes",
+            "2 tablespoons olive oil",
+            "Salt and pepper to taste",
+            "Parmesan cheese, grated"
+        ],
+        "instructions": [
+            "Cook the spaghetti according to package instructions.",
+            "Heat olive oil in a pan and sauté the onion and garlic until soft.",
+            "Add the ground beef and cook until browned.",
+            "Stir in the canned tomatoes, salt, and pepper.",
+            "Simmer for 20 minutes.",
+            "Serve the sauce over the spaghetti and top with grated Parmesan cheese."
+        ]
+    },
+    "6": {
+        "id": 6,
+        "name": "Caesar Salad",
+        "image": "/images/caesar_salad.jpg",
+        "ingredients": [
+            "1 head romaine lettuce, chopped",
+            "1/2 cup croutons",
+            "1/4 cup grated Parmesan cheese",
+            "Caesar dressing"
+        ],
+        "instructions": [
+            "In a large bowl, combine the lettuce, croutons, and Parmesan cheese.",
+            "Drizzle with Caesar dressing and toss to coat.",
+            "Serve immediately."
+        ]
+    },
+    "7": {
+        "id": 7,
+        "name": "Chicken Curry",
+        "image": "/images/chicken_curry.jpg",
+        "ingredients": [
+            "500g chicken breast, cubed",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tablespoon ginger, minced",
+            "2 tablespoons curry powder",
+            "400ml coconut milk",
+            "2 tablespoons vegetable oil",
+            "Salt to taste",
+            "Cilantro for garnish"
+        ],
+        "instructions": [
+            "Heat the oil in a pan and sauté the onion, garlic, and ginger until soft.",
+            "Add the chicken and cook until browned.",
+            "Stir in the curry powder and cook for 1 minute.",
+            "Pour in the coconut milk and bring to a simmer.",
+            "Cook for 20 minutes or until the chicken is cooked through.",
+            "Season with salt and garnish with cilantro before serving."
+        ]
+    },
+    "8": {
+        "id": 8,
+        "name": "Beef Tacos",
+        "image": "/images/beef_tacos.jpg",
+        "ingredients": [
+            "200g ground beef",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tablespoon taco seasoning",
+            "8 taco shells",
+            "1 cup shredded lettuce",
+            "1 cup diced tomatoes",
+            "1 cup shredded cheese",
+            "Sour cream and salsa for serving"
+        ],
+        "instructions": [
+            "Cook the ground beef, onion, and garlic in a pan until the beef is browned.",
+            "Stir in the taco seasoning and cook for 1 minute.",
+            "Fill the taco shells with the beef mixture.",
+            "Top with lettuce, tomatoes, and cheese.",
+            "Serve with sour cream and salsa."
+        ]
+    },
+    "9": {
+        "id": 9,
+        "name": "Vegetable Stir Fry",
+        "image": "/images/vegetable_stir_fry.jpg",
+        "ingredients": [
+            "1 bell pepper, sliced",
+            "1 carrot, sliced",
+            "1 broccoli head, cut into florets",
+            "1 onion, sliced",
+            "2 cloves garlic, minced",
+            "2 tablespoons soy sauce",
+            "1 tablespoon vegetable oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat the oil in a wok or large pan.",
+            "Add the garlic and onion and cook until soft.",
+            "Add the bell pepper, carrot, and broccoli and stir-fry for 5-7 minutes.",
+            "Stir in the soy sauce and cook for another 2 minutes.",
+            "Season with salt and pepper before serving."
+        ]
+    },
+    "10": {
+        "id": 10,
+        "name": "Chocolate Chip Cookies",
+        "image": "/images/chocolate_chip_cookies.jpg",
+        "ingredients": [
+            "1 cup butter, softened",
+            "1 cup white sugar",
+            "1 cup brown sugar",
+            "2 eggs",
+            "1 teaspoon vanilla extract",
+            "3 cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "1/2 teaspoon salt",
+            "2 cups chocolate chips"
+        ],
+        "instructions": [
+            "Preheat the oven to 350°F (175°C).",
+            "Cream together the butter, white sugar, and brown sugar until smooth.",
+            "Beat in the eggs one at a time, then stir in the vanilla.",
+            "Combine the flour, baking soda, and salt; gradually blend into the creamed mixture.",
+            "Stir in the chocolate chips.",
+            "Drop by rounded spoonfuls onto ungreased cookie sheets.",
+            "Bake for 10 minutes or until edges are nicely browned."
+        ]
+    },
+    "11": {
+        "id": 11,
+        "name": "Margarita Pizza",
+        "image": "/images/margarita_pizza.jpg",
+        "ingredients": [
+            "1 pizza dough",
+            "1/2 cup tomato sauce",
+            "1 cup mozzarella cheese, shredded",
+            "1/4 cup fresh basil leaves",
+            "2 tablespoons olive oil",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Preheat the oven to 475°F (245°C).",
+            "Roll out the pizza dough on a floured surface.",
+            "Spread the tomato sauce over the dough.",
+            "Sprinkle with mozzarella cheese and basil leaves.",
+            "Drizzle with olive oil and season with salt.",
+            "Bake for 10-12 minutes or until the crust is golden and the cheese is bubbly."
+        ]
+    },
+    "12": {
+        "id": 12,
+        "name": "Chicken Alfredo",
+        "image": "/images/chicken_alfredo.jpg",
+        "ingredients": [
+            "200g fettuccine",
+            "2 chicken breasts, sliced",
+            "1 cup heavy cream",
+            "1/2 cup grated Parmesan cheese",
+            "2 cloves garlic, minced",
+            "2 tablespoons butter",
+            "Salt and pepper to taste",
+            "Parsley for garnish"
+        ],
+        "instructions": [
+            "Cook the fettuccine according to package instructions.",
+            "In a large pan, melt the butter and cook the garlic until fragrant.",
+            "Add the chicken and cook until browned and cooked through.",
+            "Stir in the heavy cream and Parmesan cheese.",
+            "Simmer until the sauce thickens.",
+            "Toss the cooked fettuccine with the sauce.",
+            "Season with salt and pepper and garnish with parsley before serving."
+        ]
+    },
+    "13": {
+        "id": 13,
+        "name": "Tomato Soup",
+        "image": "/images/tomato_soup.jpg",
+        "ingredients": [
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "800g canned tomatoes",
+            "2 cups vegetable broth",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste",
+            "Basil leaves for garnish"
+        ],
+        "instructions": [
+            "Heat the olive oil in a pot and sauté the onion and garlic until soft.",
+            "Add the canned tomatoes and vegetable broth.",
+            "Bring to a boil, then reduce heat and simmer for 20 minutes.",
+            "Blend the soup until smooth.",
+            "Season with salt and pepper and garnish with basil leaves before serving."
+        ]
+    },
+    "14": {
+        "id": 14,
+        "name": "French Toast",
+        "image": "/images/french_toast.jpg",
+        "ingredients": [
+            "4 slices of bread",
+            "2 eggs",
+            "1/2 cup milk",
+            "1 teaspoon vanilla extract",
+            "1/2 teaspoon ground cinnamon",
+            "2 tablespoons butter",
+            "Maple syrup for serving"
+        ],
+        "instructions": [
+            "In a bowl, whisk together the eggs, milk, vanilla extract, and cinnamon.",
+            "Dip each slice of bread in the egg mixture, coating both sides.",
+            "Melt the butter in a pan over medium heat.",
+            "Cook the bread slices until golden brown on both sides.",
+            "Serve with maple syrup."
+        ]
+    },
+    "15": {
+        "id": 15,
+        "name": "Beef Stew",
+        "image": "/images/beef_stew.jpg",
+        "ingredients": [
+            "500g beef chuck, cubed",
+            "1 onion, chopped",
+            "2 carrots, sliced",
+            "2 potatoes, cubed",
+            "2 cloves garlic, minced",
+            "4 cups beef broth",
+            "2 tablespoons tomato paste",
+            "2 tablespoons olive oil",
+            "Salt and pepper to taste",
+            "Thyme for garnish"
+        ],
+        "instructions": [
+            "Heat the olive oil in a pot and brown the beef on all sides.",
+            "Remove the beef and set aside.",
+            "In the same pot, sauté the onion and garlic until soft.",
+            "Stir in the tomato paste and cook for 1 minute.",
+            "Add the beef, carrots, potatoes, and beef broth.",
+            "Bring to a boil, then reduce heat and simmer for 1.5 to 2 hours.",
+            "Season with salt and pepper and garnish with thyme before serving."
+        ]
+    },
+    "16": {
+        "id": 16,
+        "name": "Greek Salad",
+        "image": "/images/greek_salad.jpg",
+        "ingredients": [
+            "1 cucumber, chopped",
+            "2 tomatoes, chopped",
+            "1/2 red onion, sliced",
+            "1/2 cup Kalamata olives",
+            "1/4 cup feta cheese, crumbled",
+            "2 tablespoons olive oil",
+            "1 tablespoon red wine vinegar",
+            "Salt and pepper to taste",
+            "Oregano for garnish"
+        ],
+        "instructions": [
+            "In a large bowl, combine the cucumber, tomatoes, red onion, olives, and feta cheese.",
+            "Drizzle with olive oil and red wine vinegar.",
+            "Season with salt, pepper, and oregano.",
+            "Toss to combine and serve."
+        ]
+    },
+    "17": {
+        "id": 17,
+        "name": "Banana Bread",
+        "image": "/images/banana_bread.jpg",
+        "ingredients": [
+            "2 cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "1/4 teaspoon salt",
+            "1/2 cup butter, softened",
+            "3/4 cup brown sugar",
+            "2 eggs, beaten",
+            "2 1/3 cups mashed overripe bananas"
+        ],
+        "instructions": [
+            "Preheat the oven to 350°F (175°C).",
+            "In a large bowl, combine the flour, baking soda, and salt.",
+            "In a separate bowl, mix the butter and sugar until creamy.",
+            "Beat in the eggs, then add the mashed bananas.",
+            "Stir in the flour mixture until just combined.",
+            "Pour the batter into a loaf pan.",
+            "Bake for 50 to 60 minutes or until a toothpick inserted into the center comes out clean."
+        ]
+    },
+    "18": {
+        "id": 18,
+        "name": "Pesto Pasta",
+        "image": "/images/pesto_pasta.jpg",
+        "ingredients": [
+            "200g fettuccine",
+            "1/2 cup basil leaves",
+            "2 cloves garlic, minced",
+            "1/2 cup pine nuts",
+            "1/2 cup grated Parmesan cheese",
+            "1/2 cup olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Cook the fettuccine according to package instructions.",
+            "In a food processor, combine the basil leaves, garlic, pine nuts, Parmesan cheese, and olive oil.",
+            "Process until smooth.",
+            "Toss the cooked fettuccine with the pesto sauce.",
+            "Season with salt and pepper before serving."
+        ]
+    },
+    "19": {
+        "id": 19,
+        "name": "Caprese Salad",
+        "image": "/images/caprese_salad.jpg",
+        "ingredients": [
+            "4 large tomatoes, sliced",
+            "1 ball fresh mozzarella cheese, sliced",
+            "1/4 cup fresh basil leaves",
+            "2 tablespoons olive oil",
+            "Salt and pepper to taste",
+            "Balsamic glaze for serving"
+        ],
+        "instructions": [
+            "Arrange the tomato and mozzarella slices on a platter.",
+            "Tuck the basil leaves between the slices.",
+            "Drizzle with olive oil, salt, and pepper.",
+            "Serve with balsamic glaze on the side."
+        ]
+    },
+    "20": {
+        "id": 20,
+        "name": "Lemon Herb Roasted Chicken",
+        "image": "/images/lemon_herb_roasted_chicken.jpg",
+        "ingredients": [
+            "1 whole chicken (about 4-5 pounds)",
+            "4 lemons, halved",
+            "4 sprigs fresh rosemary",
+            "4 sprigs fresh thyme",
+            "4 cloves garlic, minced",
+            "1/2 cup olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat the oven to 425°F (220°C).",
+            "Rinse the chicken and pat it dry.",
+            "In a small bowl, mix the minced garlic with the olive oil.",
+            "Rub the chicken all over with the garlic-olive oil mixture.",
+            "Place the chicken in a roasting pan.",
+            "Add the lemon halves and herbs to the pan.",
+            "Season the chicken with salt and pepper.",
+            "Roast the chicken for 1 hour and 15 minutes or until the internal temperature reaches 165°F (75°C).",
+            "Let the chicken rest for 10 minutes before carving and serving."
+        ]
+    }
+}
+            
+        
