@@ -48,7 +48,7 @@ The project structure is organized as follows:
 
 - `/`: Home page.
 - `/recipes`: Recipes page.
-- `/recipes/:id`: Recipe details page.
+- `/recipe/:id`: Recipe details page.
 
 ## Components
 
