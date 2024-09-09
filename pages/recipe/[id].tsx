@@ -1,34 +1,39 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { iRecipe } from "@/types/recipe";
-import RecipeCard from "@/components/recipeCard";
-import Modal from "@/components/modal";
+import RecipeCard from "@/components/RecipeCard";
+import Modal from "@/components/Modal";
 
 export default function RecipePage() {
+  // Initialize needed variables
   const router = useRouter();
-  const { id } = router.query;
+  const id : string  = router.query.id as string
   const [recipe, setRecipe] = useState<iRecipe | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  // Function to fetch the recipe
   const getRecipe = async (id: string): Promise<iRecipe | null> => {
     const res = await fetch(`/api/recipe/${id}`);
     const data = await res.json();
     return data;
   };  
 
+  // Function to handle the image click for the modal
   const handleImageClick = (image: string): void => {
     setSelectedImage(image);
   };
 
+  // Use effect to fetch the recipe
   useEffect(() => {
     if (id) {
-      getRecipe(id as string)
+      getRecipe(id)
         .then((data) => {
           setRecipe(data);
         });
     }
   }, [id]);
 
+  // If the recipe is not loaded, show a loading message
   if (!recipe) {
     return <div>Loading...</div>;
   }

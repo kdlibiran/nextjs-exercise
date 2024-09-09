@@ -7,6 +7,7 @@ interface ModalProps {
 }
 
 export default function Modal({ image, onClose }: ModalProps) {
+  // Use effect to handle the escape key
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent): void => {
       if (event.key === "Escape") {
@@ -19,6 +20,7 @@ export default function Modal({ image, onClose }: ModalProps) {
     };
   }, [onClose]);
 
+  // Function to handle the background click escape
   const handleBackgroundClick = (event: React.MouseEvent<HTMLDivElement>): void => {
     if (event.target === event.currentTarget) {
       onClose();

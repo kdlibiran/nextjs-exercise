@@ -1,7 +1,6 @@
 import { iRecipe } from "@/types/recipe";
-import RecipeCard from "@/components/recipeCard";
 import Link from "next/link";
-
+import RecipeCard from "./RecipeCard";
 interface RecipeGridProps {
   recipes: iRecipe[];
 }

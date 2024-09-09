@@ -8,8 +8,10 @@ interface PaginationProps {
 }
 
 export default function Pagination({ recipeData, searchTerm }: PaginationProps) {
+  // Initialize needed variables
   const router = useRouter();
 
+  // Function to handle the page change
   const handlePageChange = (page: number): void => {
     router.push(`/?page=${page}&search=${searchTerm}`);
   };
@@ -32,7 +34,7 @@ export default function Pagination({ recipeData, searchTerm }: PaginationProps) 
         {recipeData && (
           <div>
             <span className="text-sm">  
-              Page {recipeData.page} of {recipeData.totalPages}
+              Page <input type="number" value={recipeData.page} onChange={(e) => handlePageChange(parseInt(e.target.value) || 1)} className="w-10 text-center" /> of {recipeData.totalPages}
             </span>
           </div>
         )}
