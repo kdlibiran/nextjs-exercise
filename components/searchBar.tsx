@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-export default function SearchBar({searchTerm, searchRecipes}: {searchTerm: string, searchRecipes: (searchTerm: string) => void}) {
+interface SearchBarProps {
+    searchTerm: string;
+    searchRecipes: (searchTerm: string) => void;
+}
+
+export default function SearchBar({searchTerm, searchRecipes}: SearchBarProps) {
     return (
         <div className="relative flex items-center w-full max-w-md">
             <input

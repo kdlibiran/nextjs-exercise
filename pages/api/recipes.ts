@@ -6,7 +6,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<iRecipeResponse | { error: string }>,
 ) {
-  let recipes: iRecipe[];
+  let recipes: iRecipe[] = [];
   try {
     recipes = Object.values(JSON.parse(fs.readFileSync("recipe.json", "utf8")));
   } catch (error) {
@@ -18,20 +18,23 @@ export default function handler(
   const search = (req.query.search as string || "").toLowerCase();
 
   // Filter recipes based on search query
-  const filteredRecipes = recipes.filter(recipe =>
+  const filteredRecipes: iRecipe[] = recipes.filter(recipe =>
     recipe.name.toLowerCase().includes(search)
   );
 
-  const startIndex = (page - 1) * limit;
-  const endIndex = page * limit;
+  const startIndex: number = (page - 1) * limit;
+  const endIndex: number = page * limit;
 
-  const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex);
-  res.status(200).json({
+  const paginatedRecipes: iRecipe[] = filteredRecipes.slice(startIndex, endIndex);
+
+  const response: iRecipeResponse = {
     previousPage: page - 1,
     page: page,
     nextPage: page + 1,
     totalPages: Math.ceil(filteredRecipes.length / limit),
     totalRecipes: filteredRecipes.length,
     recipes: paginatedRecipes,
-  });
+  };
+
+  res.status(200).json(response);
 }

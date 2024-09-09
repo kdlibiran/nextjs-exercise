@@ -10,7 +10,7 @@ interface PaginationProps {
 export default function Pagination({ recipeData, searchTerm }: PaginationProps) {
   const router = useRouter();
 
-  const handlePageChange = (page: number) => {
+  const handlePageChange = (page: number): void => {
     router.push(`/?page=${page}&search=${searchTerm}`);
   };
 

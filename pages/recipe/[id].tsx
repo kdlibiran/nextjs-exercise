@@ -10,13 +10,13 @@ export default function RecipePage() {
   const [recipe, setRecipe] = useState<iRecipe | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const getRecipe = async (id: string) => {
+  const getRecipe = async (id: string): Promise<iRecipe | null> => {
     const res = await fetch(`/api/recipe/${id}`);
     const data = await res.json();
     return data;
   };  
 
-  const handleImageClick = (image: string) => {
+  const handleImageClick = (image: string): void => {
     setSelectedImage(image);
   };
 

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
+
 interface ModalProps {
   image: string;
   onClose: () => void;
@@ -7,7 +8,7 @@ interface ModalProps {
 
 export default function Modal({ image, onClose }: ModalProps) {
   useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
+    const handleEscape = (event: KeyboardEvent): void => {
       if (event.key === "Escape") {
         onClose();
       }
@@ -18,7 +19,7 @@ export default function Modal({ image, onClose }: ModalProps) {
     };
   }, [onClose]);
 
-  const handleBackgroundClick = (event: React.MouseEvent<HTMLDivElement>) => {
+  const handleBackgroundClick = (event: React.MouseEvent<HTMLDivElement>): void => {
     if (event.target === event.currentTarget) {
       onClose();
     }

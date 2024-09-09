@@ -1,4 +1,3 @@
-"use client";
 import { iRecipeResponse } from "@/types/recipe";
 import { useEffect, useState } from "react";
 import SearchBar from "@/components/searchBar";
@@ -9,25 +8,27 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
   const [recipeData, setRecipeData] = useState<iRecipeResponse | null>(null);
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const getRecipes = async (page: number, limit: number, search: string) => {
-    const res = await fetch(`/api/recipes?page=${page}&limit=${limit}&search=${search}`);
-    const data = await res.json();
-    return data;
-  };
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
     const page = parseInt(router.query.page as string) || 1;
     const search = router.query.search as string || "";
     setSearchTerm(search);
     getRecipes(page, 8, search)
-      .then((data: iRecipeResponse) => {
+      .then((data: iRecipeResponse | null) => {
+        if (data) {
         setRecipeData(data);
+        }
       });
   }, [router.query.page, router.query.search]);
 
-  const searchRecipes = (search: string) => {
+  const getRecipes = async (page: number, limit: number, search: string): Promise<iRecipeResponse | null> => {
+    const res = await fetch(`/api/recipes?page=${page}&limit=${limit}&search=${search}`);
+    const data = await res.json();
+    return data;
+  };
+
+  const searchRecipes = (search: string): void => {
     setSearchTerm(search);
     router.push(`/?page=1&search=${search}`);
   };

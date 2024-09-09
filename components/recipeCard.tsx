@@ -4,7 +4,7 @@ import Image from "next/image";
 interface RecipeCardProps {
   recipe: iRecipe;
   detailed?: boolean;
-  onImageClick?: (image: string) => void; // Add onImageClick prop
+  onImageClick?: (image: string) => void;
 }
 
 export default function RecipeCard({ recipe, detailed = false, onImageClick }: RecipeCardProps) {
