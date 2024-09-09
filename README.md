@@ -14,7 +14,7 @@ This is a Next.js application for browsing and searching recipes. The applicatio
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/nextjs-recipe-app.git
+   git clone https://github.com/kdlibiran/nextjs-exercise.git
    cd nextjs-recipe-app
    ```
 
