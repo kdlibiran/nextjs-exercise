@@ -26,7 +26,7 @@ export default function Pagination({ recipeData, searchTerm }: PaginationProps) 
           disabled={!recipeData || recipeData.previousPage <= 0}
           className="px-2 py-1 bg-slate-500 text-white rounded disabled:bg-gray-300"
         >
-          Prev
+          <img src="/icons/prev.svg" alt="Prev" />
         </button>
         {recipeData && (
           <div>
@@ -40,7 +40,7 @@ export default function Pagination({ recipeData, searchTerm }: PaginationProps) 
           disabled={!recipeData || recipeData.nextPage > recipeData.totalPages}
           className="px-2 py-1 bg-slate-500 text-white rounded disabled:bg-gray-300"
         >
-          Next
+          <img src="/icons/next.svg" alt="Next" />
         </button>
       </div>
     </div>
