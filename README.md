@@ -60,5 +60,5 @@ The project structure is organized as follows:
 
 ## API Endpoints
 
-- `GET /api/recipes`: Fetches recipes with pagination and category filtering.
+- `GET /api/recipes`: Fetches recipes with pagination and search.
 - `GET /api/recipe/:id`: Fetches details of a specific recipe.
