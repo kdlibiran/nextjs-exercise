@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import { iRecipe } from "@/types/recipe";
 import RecipeCard from "@/components/RecipeCard";
 import Modal from "@/components/Modal";
+import styles from "./RecipePage.module.scss"; // Import the SCSS module
 
 export default function RecipePage() {
   // Initialize needed variables
   const router = useRouter();
-  const id : string  = router.query.id as string
+  const id: string = router.query.id as string;
   const [recipe, setRecipe] = useState<iRecipe | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -16,7 +17,7 @@ export default function RecipePage() {
     const res = await fetch(`/api/recipe/${id}`);
     const data = await res.json();
     return data;
-  };  
+  };
 
   // Function to handle the image click for the modal
   const handleImageClick = (image: string): void => {
@@ -43,13 +44,16 @@ export default function RecipePage() {
       {selectedImage && (
         <Modal image={selectedImage} onClose={() => setSelectedImage(null)} />
       )}
-      <div className="min-h-screen flex flex-col justify-center items-center relative">
-        <div className="absolute top-4 left-4">
-            <button className="text-slate-500 hover:text-blue-700 transition-colors duration-300" onClick={() => router.back()}>
+      <div className={`${styles.recipePageContainer}`}>
+        <div className={styles.backButtonContainer}>
+            <button
+              className={styles.backButton}
+              onClick={() => router.back()}
+            >
               ← Back to Recipes
             </button>
         </div>
-        <div className="max-w-2xl w-full mx-auto p-4">
+        <div className={styles.recipeCardContainer}>
           <RecipeCard recipe={recipe} detailed onImageClick={handleImageClick} />
         </div>
       </div>

@@ -1,0 +1,23 @@
+.pagination {
+    @apply flex flex-col items-center mt-4;
+
+    .paginationTotal {
+        @apply mb-4;
+    }
+
+    .paginationButtons {
+        @apply flex gap-4 items-center;
+
+        .paginationButton {
+            @apply px-4 py-2 bg-black text-white rounded-md cursor-pointer; 
+        }
+
+        .paginationButton:disabled {
+            @apply bg-gray-300 text-white;
+        }
+
+        .paginationInput {
+            @apply w-8 text-center;
+        }
+    }
+}

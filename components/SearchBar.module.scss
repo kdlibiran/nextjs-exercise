@@ -1,0 +1,12 @@
+.searchBarContainer {
+  @apply relative flex items-center w-full max-w-lg;
+  .searchInput {
+    @apply pl-10 pr-4 pt-2 pb-2 border border-gray-300 rounded-full w-full;
+  }
+  
+  .searchIcon {
+    @apply absolute left-3 w-4 h-4 text-gray-500;
+  }
+  
+}
+

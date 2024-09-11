@@ -1,0 +1,12 @@
+.modal {
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-[1000];
+  
+  .modalContent {
+    @apply relative w-2/3 m-auto p-4;
+  
+    .modalImage {
+      @apply max-w-full max-h-full m-auto;
+    }
+  }
+}
+

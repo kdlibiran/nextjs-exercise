@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
+import styles from "./Modal.module.scss";
 
 interface ModalProps {
   image: string;
@@ -28,9 +29,9 @@ export default function Modal({ image, onClose }: ModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={handleBackgroundClick}>
-      <div className="relative w-2/3 mx-auto p-4">
-        <Image src={image} alt="Full size" className="max-w-full max-h-full mx-auto" onClick={(e) => e.stopPropagation()} 
+    <div className={styles.modal} onClick={handleBackgroundClick}>
+      <div className={styles.modalContent}>
+        <Image src={image} alt="Full size" className={styles.modalImage} onClick={(e) => e.stopPropagation()} 
           height={650}
           width={650}
         />

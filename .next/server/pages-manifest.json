@@ -1,9 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/recipe/[id]": "pages/recipe/[id].js",
-  "/api/recipe/[id]": "pages/api/recipe/[id].js",
-  "/api/recipes": "pages/api/recipes.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/api/recipe/[id]":"pages/api/recipe/[id].js","/api/recipes":"pages/api/recipes.js","/":"pages/index.html","/recipe/[id]":"pages/recipe/[id].html","/_error":"pages/_error.js","/404":"pages/404.html"}

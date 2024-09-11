@@ -1,36 +1,43 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-78c92fac7aa8fdd8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
+  "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/6CXxCyWvTbiSZe7WdyeIG/_buildManifest.js",
+    "static/6CXxCyWvTbiSZe7WdyeIG/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-2cfcdddc4f59f93a.js",
+      "static/chunks/873-501d104ad6759e47.js",
+      "static/css/f025abc6d7f751c6.css",
+      "static/chunks/pages/index-210864eeb3411c87.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-2cfcdddc4f59f93a.js",
+      "static/css/2b5c3e96a6a32e54.css",
+      "static/chunks/pages/_app-a7e2d84213bc89e5.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-2cfcdddc4f59f93a.js",
+      "static/chunks/pages/_error-77823ddac6993d35.js"
     ],
     "/recipe/[id]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/recipe/[id].js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-2cfcdddc4f59f93a.js",
+      "static/chunks/873-501d104ad6759e47.js",
+      "static/css/9d48483c8d65193e.css",
+      "static/chunks/pages/recipe/[id]-11d8600ccb88e8e3.js"
     ]
   },
   "ampFirstPages": []

@@ -4,6 +4,7 @@ import SearchBar from "@/components/SearchBar";
 import RecipeGrid from "@/components/RecipeGrid";
 import Pagination from "@/components/Pagination";
 import { useRouter } from "next/router";
+import styles from "./HomePage.module.scss";
 
 export default function Home() {
   // Initialize 
@@ -36,23 +37,23 @@ export default function Home() {
   };
 
   // Function to search for recipes
-  const searchRecipes = (search: string): void => {
+  const searchRecipes = (page: number, search: string): void => {
     setSearchTerm(search);
-    router.push(`/?page=1&search=${search}`);
+    router.push(`/?page=${page}&search=${search}`);
   };
 
   return (
-    <div className="flex flex-col gap-4 p-7 min-h-screen">
-      <div className="flex flex-row items-center justify-between mb-4">
-        <div className="flex justify-center text-3xl font-bold font-mono">
+    <div className={styles.pageContainer}>
+      <div className={styles.headerContainer}>
+        <div className={styles.title}>
           Recipes
         </div>
         <SearchBar searchTerm={searchTerm} searchRecipes={searchRecipes} />
       </div>
-      <div className="flex-grow flex flex-col justify-center">
+      <div className={styles.contentContainer}>
         {recipeData && <RecipeGrid recipes={recipeData.recipes} />}
       </div>
-      <div className="mt-auto">
+      <div className={styles.footerContainer}>
         <Pagination recipeData={recipeData} searchTerm={searchTerm} />
       </div>
     </div>
